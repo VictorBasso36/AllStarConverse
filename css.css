@@ -1,0 +1,155 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins', sans-serif;
+}
+body{
+    min-height: 100vh;
+    overflow-x: hidden;
+}
+
+.allstartitulo{
+    color: white;
+    align-items:center ;
+    position: absolute;
+    text-align: center;
+    justify-content: center;
+    
+}
+.scene,
+canvas{
+    
+    position: absolute;
+    width: 100%;
+    height: 100%;
+
+}
+
+header{
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+    position: relative;
+    width: 100%;
+    top: 0;
+    left: 0;
+    padding: 30px 50px;
+    justify-content: space-between;
+    align-items: center;
+    letter-spacing: 2px;
+    display: flex;
+
+}
+header .logo{
+
+    margin-left: 4%;
+    text-decoration: none;
+    color: black;
+    font-weight: 700;
+    font-size: 2em;    
+    text-transform: uppercase;
+}
+header ul{
+    margin-left: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+header ul li{
+    list-style: none;
+    margin-left: 20px;
+    
+}
+header ul li a{
+    font-weight: 400;
+    font-size: 20px;
+    text-decoration: none;
+    padding: 6px 15px;
+    color: black;
+    border-radius: 34px;
+}
+
+
+
+header ul li a:hover,
+header ul li a.active{
+    background-color: black;
+    color: white;
+
+}
+/**primeiro conteudo*/
+.banner{
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+    background-color: black;
+    height: 550px;
+    width: 1005;
+    
+
+}
+
+.bannerquadradoimg{
+
+    background: rgb(195,79,34);
+    background: linear-gradient(94deg, rgba(195,79,34,1) 0%, rgba(253,187,45,1) 100%);
+    width: 500px;
+    height: 80%; 
+    border-radius: 34px; 
+    justify-content: center; 
+    display: flex;
+    padding-bottom: 70px;
+    padding-right: 50px;
+}
+/*botão hover*/
+span{
+    position: relative;
+    display: flex;
+    width: 180px;
+    height: 55px;
+    margin: 0 15px;
+    perspective: 1000px;
+  }
+  span a{
+    font-size: 19px;
+    letter-spacing: 1px;
+    transform-style: preserve-3d;
+    transform: translateZ(-25px);
+    transition: transform .25s;
+    font-family: 'Montserrat', sans-serif;
+    
+  }
+  span a:before,
+  span a:after{
+    position: absolute;
+    content: "COMPRE";
+    height: 55px;
+    width: 180px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 5px solid #fff;
+    box-sizing: border-box;
+    border-radius: 5px;
+  }
+  span a:before{
+    color: black;
+    background: #fff;
+    transform: rotateY(0deg) translateZ(25px);
+  }
+  span a:after{
+    color: #fff;
+    transform: rotateX(90deg) translateZ(25px);
+  }
+  span a:hover{
+    transform: translateZ(-25px) rotateX(-90deg);
+  }
+/*fim botão hover*/
+/*fim primeiro conteudo*/
+
+
+.conteudo3{
+    height: 400px;
+    /*background-repeat:no-repeat; 
+    background-image: url('./img/wave.svg');*/
+}
